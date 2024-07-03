@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="#F6F6E9"
+                tools:context=".MainActivity">
+
+                <LinearLayout
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/bar"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="05sp"
+                        android:layout_marginTop="-10sp">
+
+
+                        <TextView
+                            android:id="@+id/HelloText"
+                            android:layout_width="296dp"
+                            android:layout_height="47dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginBottom="05sp"
+                            android:fontFamily="@font/leaguespartan_black"
+                            android:text="CHOOSE FILTERS"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewPopUp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        app:cardBackgroundColor="#7B3911"
+                        app:cardCornerRadius="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/area"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/leaguespartansemibold"
+                                android:text="Area:"
+                                android:textColor="@color/white"
+                                android:textSize="27sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txt"
+                                android:layout_width="270dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:hint="Select area"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewPopUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="230sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        app:cardBackgroundColor="#7B3911"
+                        app:cardCornerRadius="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+
+
+                            <!-- <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="Enter your username"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/NameInput"
+                        android:layout_width="350dp"
+                        android:layout_height="70dp"
+                        android:drawableStart="@drawable/name"
+                        android:drawablePadding="10dp"
+                        android:hint="name"
+                        android:inputType="textPersonName" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="Enter your password"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="350dp"
+                        android:layout_height="70dp"
+                        android:drawableStart="@drawable/password"
+                        android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:hint="password"
+                        android:inputType="textPassword" /> -->
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="66dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/stars"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_marginTop="-12sp"
+                                    android:fontFamily="@font/leaguespartansemibold"
+                                    android:text="Stars:"
+                                    android:textColor="@color/white"
+                                    android:textSize="27sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="247dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_marginTop="-10dp">
+
+                                    <Button
+                                        android:id="@+id/minusButtonStars"
+                                        android:layout_width="55dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="40dp"
+                                        android:layout_marginTop="6sp"
+                                        android:background="#00FFFFFF"
+                                        android:text="-"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:id="@+id/Stars"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginStart="126dp"
+                                        android:layout_marginTop="23dp"
+                                        android:text="0"
+                                        android:textColor="#808080"
+                                        android:textSize="24sp" />
+
+                                    <Button
+                                        android:id="@+id/plusButtonStars"
+                                        android:layout_width="57sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="16sp"
+                                        android:layout_marginEnd="20sp"
+                                        android:background="#00FFFFFF"
+                                        android:text="+"
+                                        android:textSize="34sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/reviews"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7sp"
+                                    android:layout_marginTop="-12sp"
+                                    android:fontFamily="@font/leaguespartansemibold"
+                                    android:text="Reviews:"
+                                    android:textColor="@color/white"
+                                    android:textSize="27sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="247dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginTop="-10dp">
+
+                                    <Button
+                                        android:id="@+id/minusButtonReviews"
+                                        android:layout_width="55dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="21sp"
+                                        android:layout_marginTop="6sp"
+                                        android:background="#00FFFFFF"
+                                        android:text="-"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:id="@+id/Reviews"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginStart="107dp"
+                                        android:layout_marginTop="23dp"
+                                        android:text="0"
+                                        android:textColor="#808080"
+                                        android:textSize="24sp" />
+
+                                    <Button
+                                        android:id="@+id/plusButtonReviews"
+                                        android:layout_width="57dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginEnd="40dp"
+                                        android:background="#00FFFFFF"
+                                        android:text="+"
+                                        android:textSize="34sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/persons"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7sp"
+                                    android:layout_marginTop="-12sp"
+                                    android:fontFamily="@font/leaguespartansemibold"
+                                    android:text="Persons:"
+                                    android:textColor="@color/white"
+                                    android:textSize="27sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="247dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginTop="-10dp">
+
+                                    <Button
+                                        android:id="@+id/minusButton"
+                                        android:layout_width="55dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="27sp"
+                                        android:layout_marginTop="6sp"
+                                        android:background="#00FFFFFF"
+                                        android:text="-"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:id="@+id/Persons"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginStart="113dp"
+                                        android:layout_marginTop="23dp"
+                                        android:text="0"
+                                        android:textColor="#808080"
+                                        android:textSize="24sp" />
+
+                                    <Button
+                                        android:id="@+id/plusButton"
+                                        android:layout_width="57dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginEnd="33dp"
+                                        android:background="#00FFFFFF"
+                                        android:text="+"
+                                        android:textSize="34sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/back"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_button_background"
+                            android:backgroundTint="#7B3911"
+                            android:fontFamily="@font/leaguespartansemibold"
+                            android:text="From"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/toD"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="30sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_button_background"
+                            android:backgroundTint="#7B3911"
+                            android:fontFamily="@font/leaguespartansemibold"
+                            android:text="To"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="240sp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/search3" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewPopUp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-73dp"
+                        android:layout_marginEnd="8dp"
+                        app:cardBackgroundColor="#7B3911"
+                        app:cardCornerRadius="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:backgroundTint="@android:color/transparent">
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/loginexe"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="640sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:backgroundTint="#9FF6F6E9"
+                    android:contentDescription="login"
+                    android:drawableStart="@drawable/search"
+                    android:fontFamily="@font/leaguespartansemibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp"
+                    android:text="SEARCH"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

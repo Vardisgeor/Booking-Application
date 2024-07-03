@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6360D3"
+            android:fitsSystemWindows="true"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="229dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/travel" />
+
+            <ImageButton
+                android:id="@+id/prevButton"
+                android:layout_width="51dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/baseline_arrow_back_ios_24"
+                android:contentDescription="goback" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="serif"
+                android:text="Welcome\nBack"
+                android:textColor="@color/white"
+                android:textSize="38dp"
+                android:textStyle="bold"
+                app:layout_anchorGravity="bottom|center" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewPopUp"
+                android:layout_width="394dp"
+                android:layout_height="402dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#33C8E3"
+                app:cardCornerRadius="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="311dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/NameInput"
+                            android:layout_width="354dp"
+                            android:layout_height="69dp"
+                            android:drawableStart="@drawable/name"
+                            android:drawablePadding="10dp"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/passwordInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawableStart="@drawable/password"
+                            android:drawablePadding="10dp"
+                            android:hint="Password"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!-- <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="Enter your username"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/NameInput"
+                        android:layout_width="350dp"
+                        android:layout_height="70dp"
+                        android:drawableStart="@drawable/name"
+                        android:drawablePadding="10dp"
+                        android:hint="name"
+                        android:inputType="textPersonName" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="Enter your password"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="350dp"
+                        android:layout_height="70dp"
+                        android:drawableStart="@drawable/password"
+                        android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:hint="password"
+                        android:inputType="textPassword" /> -->
+
+
+                    <ImageButton
+                        android:id="@+id/loginexe"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="280dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="login"
+                        android:src="@drawable/nexticon" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>

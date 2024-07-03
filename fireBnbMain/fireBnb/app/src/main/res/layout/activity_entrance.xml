@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F6F6E9"
+            android:fitsSystemWindows="true"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="240sp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/travel" />
+
+            <TextView
+                android:id="@+id/Welcomee"
+                android:layout_width="wrap_content"
+                android:layout_height="99dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/leaguespartanmedium"
+                android:text="Hello,\nWelcome to Firebnb"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                app:layout_anchorGravity="bottom|center"
+                tools:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewPopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="350sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="410sp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#7B3911"
+                app:cardCornerRadius="28sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="311dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/NameInput"
+                            android:layout_width="360dp"
+                            android:layout_height="75sp"
+                            android:drawableStart="@drawable/whitename"
+                            android:drawablePadding="15sp"
+                            android:fontFamily="@font/leaguespartan_regular"
+                            android:hint="Name"
+                            android:includeFontPadding="true"
+                            android:inputType="textPersonName"
+                            android:paddingTop="10sp"
+                            android:textSize="24sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+
+                    <!-- <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.7"
+                            android:text="Enter your username"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/NameInput"
+                            android:layout_width="350dp"
+                            android:layout_height="70dp"
+                            android:drawableStart="@drawable/name"
+                            android:drawablePadding="10dp"
+                            android:hint="name"
+                            android:inputType="textPersonName" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.7"
+                            android:text="Enter your password"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/passwordInput"
+                            android:layout_width="350dp"
+                            android:layout_height="70dp"
+                            android:drawableStart="@drawable/password"
+                            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                            android:drawablePadding="10dp"
+                            android:enabled="false"
+                            android:hint="password"
+                            android:inputType="textPassword" /> -->
+
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="280sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="login"
+                        android:src="@drawable/nexticon" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-10dp"
+    android:background="#F6F6E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cardCornerRadius="20sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/bar"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/HelloText"
+                android:layout_width="296dp"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginBottom="05sp"
+                android:fontFamily="@font/leaguespartan_black"
+                android:text="CONFIRM BOOKING"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/bar">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5sp"
+                android:fontFamily="sans-serif-black"
+                android:text="room name"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="317sp"
+                android:layout_height="199sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="31sp"
+                android:layout_marginTop="34sp"
+                android:layout_marginEnd="36sp"
+                app:srcCompat="@drawable/room2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="295sp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="155sp"
+                        android:layout_marginTop="-6sp"
+                        android:layout_marginRight="30sp"
+                        android:fontFamily="sans-serif"
+                        android:text="-"
+                        android:textColor="#050505"
+                        android:textSize="48sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPerson"
+                    android:layout_width="4sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="18sp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="2sp"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="22sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="-30sp"
+                    android:layout_weight="0.6"
+                    app:srcCompat="@drawable/persons" />
+
+                <TextView
+                    android:id="@+id/textStars"
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70sp"
+                    android:layout_marginRight="45sp"
+                    android:layout_marginTop="18sp"
+                    android:layout_weight="0.6"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3/5"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="10sp"
+                    android:layout_height="32sp"
+                    android:layout_marginLeft="-70sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_weight="0.6"
+                    app:srcCompat="@drawable/stars" />
+
+                <TextView
+                    android:id="@+id/textReviews"
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="-15sp"
+                    android:layout_marginTop="18sp"
+                    android:layout_weight="0.35"
+                    android:fontFamily="sans-serif-black"
+                    android:text="16"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="10sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="-15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/reviewsss" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="170sp"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginBottom="3sp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#7B3911"
+                android:text="From" />
+
+            <Button
+                android:id="@+id/toD"
+                android:layout_width="170sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#7B3911"
+                android:text="To"
+                tools:layout_marginStart="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="-40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="0sp"
+                android:layout_marginRight="-270sp"
+                android:layout_marginLeft="60sp"
+                android:fontFamily="serif"
+                android:text="125$"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="320sp"
+                android:layout_marginTop="0sp"
+                android:background="@drawable/rounded_button_book"
+                android:text="BOOK" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pricetag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="65sp"
+            android:layout_marginTop="-70sp"
+            android:layout_marginBottom="20sp"
+            android:text="/ for 3 nights"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="440sp"
+            android:layout_height="100sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="-10sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="10sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/starsgrey" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="10sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/starsgrey" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="10sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/starsgrey" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="10sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/starsgrey" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="10sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginTop="20sp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/starsgrey" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gradetag"
+            android:layout_width="100sp"
+            android:layout_height="20sp"
+            android:layout_marginTop="-45sp"
+            android:layout_marginBottom="20sp"
+            android:text="Tap to grade"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
