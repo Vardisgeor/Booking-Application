@@ -59,9 +59,12 @@ Alternatively, from the initial screen of Android Studio, select "Open an existi
 ### Backend Setup
 After the application is started, for starting the server run this classes in this exact order: Master, Worker1, Worker2, Worker3, Reducer, WorkerBackup
 
+
 ### Usage
 - **Manager Console Application**: Use the console application to add accommodations, set available dates, and view bookings.
 - **Tenant Android Application**: Use the Android app to filter and book accommodations, as well as to rate them.
+  
+## UI
 
-## Screenshots
 
+![screen-recording-20240703-220014-online-video-cuttercom_j1tWGD5i](https://github.com/Vardisgeor/Booking-Application/assets/83668810/46394fe1-28b9-4820-aa07-2be37c9be51d)
